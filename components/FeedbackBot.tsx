@@ -17,39 +17,61 @@ interface DialogOption {
 const dialogOptions: DialogOption[] = [
   {
     id: '1',
-    text: 'What is Literasea?',
-    response: "Welcome to Literasea! It's a revolutionary platform that combines AI, Web3, and SocialFi to enhance digital reading experiences. Let me guide you through!",
+    text: 'What is this template?',
+    response: "Welcome! This is a modern website template built with Next.js 14, Tailwind CSS, and Framer Motion. It's perfect for creating stunning landing pages with smooth animations and responsive design! 🎨",
     nextOptions: [
       {
         id: '1-1',
-        text: 'How do I start using it?',
-        response: "To get started:\n• Connect your Web3 wallet\n• Explore the NFT marketplace\n• Create and customize your AI agent\n• Read books with your AI companion"
+        text: 'How do I get started?',
+        response: "Getting started is easy:\n• Clone the repository\n• Install dependencies with 'npm install'\n• Run 'npm run dev'\n• Open http://localhost:3000\n\nYou'll be up and running in minutes! 🚀"
+      },
+      {
+        id: '1-2',
+        text: 'What features are included?',
+        response: "This template comes packed with:\n• 🎭 Smooth Framer Motion animations\n• 🌙 Dark mode support\n• 📱 Fully responsive design\n• ⚡ Optimized performance\n• 🎯 SEO friendly\n• 🧩 Modular components"
       }
     ]
   },
   {
     id: '2',
-    text: 'Tell me about the features',
-    response: "Literasea offers amazing features:\n• AI-Powered Companions 🤖\n• NFT Marketplace 🏪\n• Web3 Integration 🌐\n• SocialFi Book Reviews 💬",
+    text: 'Tell me about customization',
+    response: "Customizing the template is simple:\n• 🎨 Edit colors and typography in tailwind.config.js\n• 💅 Modify global styles in globals.css\n• 🧩 Use modular components\n• 📱 Fully responsive design system",
     nextOptions: [
       {
         id: '2-1',
-        text: 'How do these features work?',
-        response: "Our AI companions enhance your reading with personalized insights. You can trade AI agents in the marketplace, and enjoy secure ownership of digital assets through Web3."
+        text: 'How to modify components?',
+        response: "All components are modular and easy to customize:\n• Find components in the /components directory\n• Use Tailwind classes for styling\n• Leverage Framer Motion for animations\n• Add or remove features as needed"
+      },
+      {
+        id: '2-2',
+        text: 'Can I change the theme?',
+        response: "Absolutely! The template supports:\n• Light/Dark mode switching\n• Custom color schemes\n• Typography customization\n• Layout modifications\n\nJust edit the tailwind.config.js file! 🎨"
       }
     ]
   },
   {
     id: '3',
+    text: 'What can I build with it?',
+    response: "This template is perfect for:\n• 🏢 Corporate websites\n• 🛍️ Product marketing\n• 💼 Professional services\n• 📱 App landing pages\n• 🎯 Marketing campaigns\n• 🌐 Digital portfolios\n• 🚀 SaaS platforms",
+    nextOptions: [
+      {
+        id: '3-1',
+        text: 'Show me examples',
+        response: "Check out our showcase examples:\n• Corporate landing pages\n• Product launch sites\n• Portfolio websites\n• Marketing campaigns\n\nAll built with this template! 🎯"
+      }
+    ]
+  },
+  {
+    id: '4',
     text: 'Back to main menu',
-    response: "Sure! What else would you like to know?",
+    response: "What else would you like to know about the template? 😊",
   }
 ]
 
 const FeedbackBot = () => {
   const [isOpen, setIsOpen] = useState(false)
   const [messages, setMessages] = useState<Message[]>([
-    { type: 'bot', content: 'Hi! 👋 I\'m your reading assistant. Would you like a quick tour of Literasea?' }
+    { type: 'bot', content: 'Hi! 👋 I\'m your template guide. Would you like to learn more about this modern website template?' }
   ])
   const [currentOptions, setCurrentOptions] = useState(dialogOptions)
   const messagesEndRef = useRef<HTMLDivElement>(null)
