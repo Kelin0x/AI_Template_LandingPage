@@ -1,36 +1,127 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Modern Website Template
 
-## Getting Started
+🎨 A modern, responsive website template built with Next.js 14, Tailwind CSS, and Framer Motion.
 
-First, run the development server:
+## 📸 Preview
 
+### Template
+<p align="center">
+  <img src="./docs/images/template.png" alt="Navigation" width="800"/>
+</p>
+
+### Feature
+<p align="center">
+  <img src="./docs/images/feature.png" alt="Hero Section" width="800"/>
+</p>
+
+### Hero
+<div align="center">
+  <div style="display: flex; justify-content: center; gap: 20px;">
+    <img src="./docs/images/hero.png" alt="Light Mode" width="400"/>
+  </div>
+</div>
+
+## ✨ Features
+
+- 🚀 Built with Next.js 14 and TypeScript
+- 💅 Styled with Tailwind CSS
+- 🎭 Smooth animations with Framer Motion
+- 📱 Fully responsive design
+- 🌙 Dark mode support
+- 🎯 SEO optimized
+- ⚡ Fast performance
+- 🧩 Modular component architecture
+
+## 🛠 Component Showcase
+
+This modern website template is perfect for:
+- 🏢 Corporate Brand Websites
+- 🛍️ Product Marketing
+- 💼 Professional Services
+- 📱 App Landing Pages
+- 🎯 Marketing Campaigns
+- 🌐 Digital Portfolios
+- 🚀 SaaS Platforms
+
+### Template
+<p align="center">
+  <img src="./docs/images/template.png" alt="Navigation" width="800"/>
+</p>
+
+### Links：https://github.com/Kelin0x/LiteraSea
+
+<p align="center">
+  <img src="./docs/images/showcase.png" alt="Navigation" width="800"/>
+</p>
+
+## 🛠️ Tech Stack
+
+- [Next.js 14](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [Lucide Icons](https://lucide.dev/)
+- [Shadcn/ui](https://ui.shadcn.com/)
+
+## 🚀 Getting Started
+
+1. Clone the repository:
+```bash
+git clone https://github.com/Kelin0x/AI_Template_LandingPage.git
+```
+
+2. Install dependencies:
+```bash
+npm install
+
+```
+
+3. Run the development server:
 ```bash
 npm run dev
 # or
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📁 Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+├── app/                  # Next.js app directory
+├── components/          # React components
+│   ├── ui/             # UI components
+│   └── landingpage/    # Landing page components
+├── lib/                # Utility functions
+├── styles/            # Global styles
+└── public/            # Static assets
+```
 
-## Learn More
+## 🎨 Customization
 
-To learn more about Next.js, take a look at the following resources:
+1. Colors and Typography:
+   - Edit `tailwind.config.js` to customize your color palette and typography
+   - Modify `globals.css` for global styles
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Components:
+   - All components are modular and can be easily customized
+   - Find components in the `components/` directory
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📝 License
 
-## Deploy on Vercel
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🤝 Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Contributions, issues, and feature requests are welcome! Feel free to check [issues page](https://github.com/yourusername/modern-website-template/issues).
+
+## 💖 Support
+
+Give a ⭐️ if this project helped you!
+
+
+---
+
+Made with 💖 by [Kelin0x](https://github.com/Kelin0x)
