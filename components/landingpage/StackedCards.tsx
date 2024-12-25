@@ -116,7 +116,7 @@ const StackedCards: React.FC = () => {
                                 }}
                             >
                                 <motion.span
-                                    className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-[length:200%_auto]"
+                                    className="relative bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-[length:200%_auto]"
                                     animate={{
                                         backgroundPosition: ['0%', '100%', '0%']
                                     }}
@@ -127,10 +127,21 @@ const StackedCards: React.FC = () => {
                                     }}
                                 >
                                     现代设计
+                                    <motion.div
+                                        className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500"
+                                        animate={{
+                                            scaleX: [0.7, 1, 0.7]
+                                        }}
+                                        transition={{
+                                            duration: 2,
+                                            repeat: Infinity,
+                                            ease: "easeInOut"
+                                        }}
+                                    />
                                 </motion.span>
                                 <br />
                                 <motion.span
-                                    className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-teal-500 to-emerald-500 bg-[length:200%_auto]"
+                                    className="relative bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-teal-500 to-emerald-500 bg-[length:200%_auto]"
                                     animate={{
                                         backgroundPosition: ['0%', '100%', '0%']
                                     }}
@@ -141,6 +152,17 @@ const StackedCards: React.FC = () => {
                                     }}
                                 >
                                     完美动效
+                                    <motion.div
+                                        className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-blue-500 via-teal-500 to-emerald-500"
+                                        animate={{
+                                            scaleX: [0.7, 1, 0.7]
+                                        }}
+                                        transition={{
+                                            duration: 2,
+                                            repeat: Infinity,
+                                            ease: "easeInOut"
+                                        }}
+                                    />
                                 </motion.span>
                             </motion.h2>
                         </div>
